@@ -1,52 +1,42 @@
-/* montserrat-regular - latin */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
 }
-/* montserrat-700 - latin */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
     url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
 }
-/* kaushan-script-regular - latin */
 @font-face {
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
   src: local("Kaushan Script"), local("KaushanScript-Regular"),
     url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff");
 }
-/* roboto-100italic - latin */
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 100;
   src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"),
     url("../fonts/roboto-v20-latin-100italic.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-v20-latin-100italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/roboto-v20-latin-100italic.woff") format("woff");
 }
-/* roboto-regular - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"),
     url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
 }
 html {
   box-sizing: border-box;
@@ -79,14 +69,14 @@ img {
   width: 1200px;
   margin: 0 auto;
 }
-.navigation {
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-bottom: 130px;
   padding-top: 40px;
 }
-.menu {
+.header__nav-menu {
   display: flex;
   width: 490px;
   justify-content: space-between;
@@ -94,29 +84,29 @@ img {
   text-transform: uppercase;
   padding: 0;
 }
-.menu a {
+.header__nav-menu a {
   text-decoration: none;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
 }
-.menu a:hover,
-.menu a:focus {
+.header__nav-menu a:hover,
+.header__nav-menu a:focus {
   color: #fce38a;
 }
 
-.menu-list-item {
+.header__nav-menu__list-item {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   letter-spacing: 0.35px;
   position: relative;
 }
-.menu-list-item:hover::after {
+.header__nav-menu__list-item:hover::after {
   opacity: 1;
   visibility: visible;
   width: 100%;
 }
-.menu-list-item::after {
+.header__nav-menu__list-item::after {
   display: block;
   width: 0%;
   content: "";
@@ -133,26 +123,26 @@ img {
   padding-bottom: 230px;
   background-image: url(../img/header.jpg);
 }
-.menu__list_icon {
+.header__nav-menu__list-icon {
   fill: #ffffff;
 }
-.menu__list_icon:hover {
+.menu__list__icon:hover {
   fill: #fce38a;
 }
 
-.menu__list_icon-glas {
+.menu__list__icon-glas {
   width: 18px;
   height: 18px;
 }
-.menu__list_icon-card {
+.menu__list__icon-card {
   width: 18px;
   height: 15px;
 }
-.heading {
+.navigation__wrapper {
   width: 820px;
   margin: 0 auto;
 }
-.creative {
+.navigation__creative {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   text-align: center;
@@ -160,13 +150,14 @@ img {
   line-height: 86px;
   color: #ffffff;
 }
-.tittle {
+.navigation__tittle {
   font-size: 150px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
 }
-.header_button {
+.navigation__button {
+  cursor: pointer;
   border: solid 3px #fff;
   padding: 12px 30px;
   width: 164px;
@@ -181,26 +172,8 @@ img {
   font-family: "Kaushan Script";
   font-weight: 400;
 }
-.Rectangle_12 {
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  left: 875px;
-  top: 725px;
-  width: 164px;
-  height: 44px;
-  z-index: 19;
-}
-.heading {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
-.heading-2 {
+
+.service__span {
   display: block;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
@@ -209,6 +182,13 @@ img {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 20px;
+}
+.service__heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h2::after {
@@ -221,7 +201,7 @@ h2::after {
   content: "";
   margin: 28px auto 80px;
 }
-.service-list-item {
+.service__list-item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -229,7 +209,7 @@ h2::after {
   padding: 0;
   list-style: none;
 }
-.service-about-1 {
+.service__about__clock {
   width: 382px;
   margin-bottom: 100px;
   background-image: url(../img/clock.svg);
@@ -237,7 +217,7 @@ h2::after {
 
   background-repeat: no-repeat;
 }
-.service-about-2 {
+.service__about__web {
   width: 382px;
   margin-bottom: 100px;
   background-image: url(../img/web.svg);
@@ -245,7 +225,7 @@ h2::after {
 
   background-repeat: no-repeat;
 }
-.service-about-3 {
+.service__about__computer {
   width: 382px;
   margin-bottom: 100px;
   background-image: url(../img/computer.svg);
@@ -253,7 +233,7 @@ h2::after {
 
   background-repeat: no-repeat;
 }
-.service-about-4 {
+.service__about__seo {
   width: 382px;
   margin-bottom: 100px;
   background-image: url(../img/seo.svg);
@@ -261,7 +241,7 @@ h2::after {
 
   background-repeat: no-repeat;
 }
-.service-about-5 {
+.service__about__home {
   width: 382px;
   margin-bottom: 100px;
   background-image: url(../img/home.svg);
@@ -269,7 +249,7 @@ h2::after {
 
   background-repeat: no-repeat;
 }
-.service-about-6 {
+.service__about__digital {
   width: 382px;
   margin-bottom: 100px;
   background-image: url(../img/digital.svg);
@@ -277,7 +257,7 @@ h2::after {
 
   background-repeat: no-repeat;
 }
-.tittle-1 {
+.service__tittle {
   padding-left: 90px;
   font-size: 14px;
   text-transform: uppercase;
@@ -285,7 +265,7 @@ h2::after {
   color: #333333;
   font: weight 400;
 }
-.tittle-about {
+.service__tittle-about {
   padding-left: 90px;
   color: #999999;
   font-family: "Roboto", sans-serif;
@@ -293,7 +273,7 @@ h2::after {
   font-weight: 400;
   line-height: 24px;
 }
-.lorem {
+.our-team__lorem {
   margin: 0 auto;
   width: 980px;
   color: #999999;
@@ -304,29 +284,29 @@ h2::after {
   text-align: center;
   padding-bottom: 94px;
 }
-.team {
+.our-team__team {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-.name {
+.our-team__name {
   font-size: 14px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 300;
 }
-.position {
+.our-team__position {
   text-align: center;
   color: #999999;
   font-family: "Roboto", sans-serif;
 }
-.over {
+.our-team__over {
   display: flex;
 }
-.overlay {
+.our-team__overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -347,10 +327,7 @@ h2::after {
   opacity: 0;
 }
 
-.social-list-item-facebook:hover {
-  background-color: red;
-}
-.social-list-item {
+.our-team__social-list-item {
   width: 56px;
   height: 56px;
   border: rgb(252, 227, 138);
@@ -362,7 +339,7 @@ h2::after {
   background-position: center;
 }
 
-.social-list {
+.our-team__social-list {
   list-style: none;
   text-decoration: none;
   padding: 0;
@@ -372,12 +349,12 @@ h2::after {
 
   transform: translate(-50%, -50%);
 }
-.services__list_icon {
+.our-team__list-icon {
   fill: #f38181;
   width: 26px;
   height: 22px;
 }
-.services_list_wrapper {
+.our-team__services-list-wrapper {
   background-color: #fce38a;
   width: 56px;
   height: 56px;
@@ -386,32 +363,32 @@ h2::after {
   justify-content: center;
   align-items: center;
 }
-.services_list_wrapper:hover {
+.our-team__services-list-wrapper:hover {
   background-color: #f38181;
 }
-.services_list_wrapper:hover .services__list_icon {
+.our-team__services-list-wrapper:hover .our-team__list-icon {
   fill: #ffffff;
 }
-.card {
+.our-team__card {
   width: 380px;
   padding-bottom: 84px;
   position: relative;
 }
-.team-img-wrapper {
+.our-team__img-wrapper {
+  position: relative;
   transition: transform 0.2s linear;
 }
-.team-img-wrapper:hover .overlay {
+.our-team__img-wrapper:hover .our-team__overlay {
   transition: all 200ms linear;
   box-shadow: 10px 10px 0 0 #95e1d3;
 
   opacity: 1;
   visibility: visible;
 }
-.team-img-wrapper:hover {
+.our-team__img-wrapper:hover {
   transform: translate(-10px, -10px);
   transition: all 200ms linear;
 }
-
 .footer {
   border-top: 1px solid #e5e5e5;
   display: flex;
