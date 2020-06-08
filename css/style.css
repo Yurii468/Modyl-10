@@ -56,7 +56,7 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-img {
+.images {
   display: block;
   width: 100%;
   height: auto;
@@ -143,7 +143,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 230px;
-  background-image: url(../img/header.jpg);
+  background-image: url(../images/header.jpg);
 }
 .header__nav-menu__list-icon {
   fill: #ffffff;
@@ -243,7 +243,7 @@ h2::after {
 .service__about__clock {
   width: 382px;
   margin-bottom: 100px;
-  background-image: url(../img/clock.svg);
+  background-image: url(../images/clock.svg);
   background-position: left 14px top 14px;
 
   background-repeat: no-repeat;
@@ -251,7 +251,7 @@ h2::after {
 .service__about__web {
   width: 382px;
   margin-bottom: 100px;
-  background-image: url(../img/web.svg);
+  background-image: url(../images/web.svg);
   background-position: left 14px top 14px;
 
   background-repeat: no-repeat;
@@ -259,7 +259,7 @@ h2::after {
 .service__about__computer {
   width: 382px;
   margin-bottom: 100px;
-  background-image: url(../img/computer.svg);
+  background-image: url(../images/computer.svg);
   background-position: left 14px top 14px;
 
   background-repeat: no-repeat;
@@ -267,7 +267,7 @@ h2::after {
 .service__about__seo {
   width: 382px;
   margin-bottom: 100px;
-  background-image: url(../img/seo.svg);
+  background-image: url(../images/seo.svg);
   background-position: left 14px top 14px;
 
   background-repeat: no-repeat;
@@ -275,7 +275,7 @@ h2::after {
 .service__about__home {
   width: 382px;
   margin-bottom: 100px;
-  background-image: url(../img/home.svg);
+  background-image: url(../images/home.svg);
   background-position: left 14px top 14px;
 
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ h2::after {
 .service__about__digital {
   width: 382px;
   margin-bottom: 100px;
-  background-image: url(../img/digital.svg);
+  background-image: url(../images/digital.svg);
   background-position: left 14px top 14px;
 
   background-repeat: no-repeat;
@@ -531,6 +531,6 @@ h2::after {
   (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 2dppx) {
   .header {
-    background-image: url(../img/header@2x.jpg);
+    background-image: url(../images/header@2x.jpg);
   }
 }
